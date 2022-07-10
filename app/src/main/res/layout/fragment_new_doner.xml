@@ -1,14 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
     tools:context=".NewDonerFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Donor Information" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/donorName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/input_backgroud"
+        android:inputType="textPersonName"
+        android:hint="Enter Your Name"/>
+    <EditText
+        android:id="@+id/donorAge"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_backgroud"
+        android:inputType="textPersonName"
+        android:hint="Enter Your Age"/>
+    <EditText
+        android:id="@+id/donorPhone"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_backgroud"
+        android:inputType="number"
+        android:hint="Enter Your Phone Number"/>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:background="@drawable/input_backgroud"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:text="Select Blood Group"/>
+        <Spinner
+            android:id="@+id/bloodSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/genderRG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="Select Gender"/>
+        <RadioButton
+            android:id="@+id/maleRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/femaleRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:checked="false"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:background="@drawable/input_backgroud"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDOB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_backgroudn"
+            android:text="Select Blood Group"/>
+        <TextView
+            android:id="@+id/showDateTV"
+            android:layout_width="0dp"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="10/07/2022"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveBtn"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/button_backgroudn"
+        android:text="SAVE"/>
+</LinearLayout>
