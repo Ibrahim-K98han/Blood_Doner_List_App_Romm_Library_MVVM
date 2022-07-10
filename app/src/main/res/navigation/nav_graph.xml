@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.ibrahim.blooddonationapp.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_donerListFragment"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/donerListFragment"
         android:name="com.ibrahim.blooddonationapp.DonerListFragment"
-        android:label="fragment_doner_list"
+        android:label="Donor List"
         tools:layout="@layout/fragment_doner_list" >
         <action
             android:id="@+id/action_donerListFragment_to_newDonerFragment"
@@ -29,6 +29,6 @@
     <fragment
         android:id="@+id/newDonerFragment"
         android:name="com.ibrahim.blooddonationapp.NewDonerFragment"
-        android:label="fragment_new_doner"
+        android:label="New Donor"
         tools:layout="@layout/fragment_new_doner" />
 </navigation>
