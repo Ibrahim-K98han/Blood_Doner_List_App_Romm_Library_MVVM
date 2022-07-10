@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/dart/BloodDonationApp/app/src/main/res/drawable/button_backgroudn.xml" value="0.1" />
+        <entry key="..\:/dart/BloodDonationApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/dart/BloodDonationApp/app/src/main/res/drawable/input_backgroud.xml" value="0.1" />
+        <entry key="..\:/dart/BloodDonationApp/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
         <entry key="..\:/dart/BloodDonationApp/app/src/main/res/layout/fragment_home.xml" value="0.176" />
       </map>
     </option>

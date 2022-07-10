@@ -12,7 +12,8 @@
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="-250dp"
         app:lottie_rawRes="@raw/blood_drop"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"/>
@@ -21,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="35sp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-medium"
         android:text="Enter\n as a"/>
     <androidx.appcompat.widget.AppCompatButton
